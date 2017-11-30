@@ -2,7 +2,7 @@
 case $ALBERT_OP in
   "METADATA")
     STDOUT='{
-      "iid":"org.albert.extension.external/v2.0",
+      "iid":"org.albert.extension.external/v3.0",
       "name":"GnomeDictionary",
       "version":"1.0",
       "author":"Nikhil Wanpal",
@@ -13,7 +13,7 @@ case $ALBERT_OP in
     exit 0
     ;;
   "QUERY")
-    QUERYSTRING="${ALBERT_QUERY:4}"
+    QUERYSTRING="${ALBERT_QUERY}"
     echo -n '{
       "items":[{
         "id":"gnomedictionary",
